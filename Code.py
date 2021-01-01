@@ -92,10 +92,6 @@ def delete(key):
 
                 
 if __name__=="__main":    
-    
-      
-    
-
     t1=threading.Thread(target=create,args=[key,value,tout])               
     t2=threading.Thread(target=read,args=[key])               
     t3=threading.Thread(target=delete,args=[key])               
